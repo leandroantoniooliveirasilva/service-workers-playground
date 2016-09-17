@@ -25,6 +25,7 @@ self.addEventListener('fetch', function(event) {
     // This matches the result format documented at
     // https://developers.google.com/url-shortener/v1/getting_started#shorten
     var responseBody = {
+      type: 'mocked-response',
       kind: 'urlshortener#url',
       id: 'http://goo.gl/IKyjuU',
       longUrl: 'https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html'
