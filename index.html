@@ -38,7 +38,7 @@ function makeApiRequest() {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js', {scope: './'}).then(function(registration) {
+  navigator.serviceWorker.register('service-worker.js', {scope: './'}).then(function(registration) {
     console.log('ServiceWorker registration successful with scope: ', registration.scope);
     if (navigator.serviceWorker.controller) {
       // If .controller is set, then this page is being actively controlled by the service worker.
