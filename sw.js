@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Service Workers Playground</title>
-  </head>
-  <body>
-    <h1>Service Workers</h1>
-    <p>Hello Workd</p>
-  </body>
-</html>
-<script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(registration) {
     // Registration was successful
@@ -18,4 +7,3 @@ if ('serviceWorker' in navigator) {
     console.log('ServiceWorker registration failed: ', err);
   });
 }
-</script>
